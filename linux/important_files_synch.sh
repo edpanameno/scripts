@@ -3,7 +3,7 @@
 #
 # This file will be used to backup important 
 # files in my current installation of Linux 
-# which is my primary server (Mainsrv).
+# which is my primary server (mainsrv).
 # I will be using rsync to keep the files 
 # synchronized
 #
