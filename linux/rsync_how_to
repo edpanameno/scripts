@@ -1,0 +1,21 @@
+This little document will show you how to 
+use rsync.
+
+This is the command I use to backup my
+svn directory
+
+rsync -av /var/www/html/svn/ ~/data/backups/svn
+
+The command above will copy all of the contents
+of the svn folder (inside /var/www/html) to the
+svn folder in the ~/data/backups/svn folder.
+
+Note: the forward slash in the source directory
+means that it will copy everything in it (including
+the directories in the folder).
+
+Paramters:
+a - archive
+v - verbose (show what is being copied over)
+n - do nothing ... good for testing
+
