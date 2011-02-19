@@ -15,12 +15,22 @@ DB_PASSWORD=""
 DB_FOLDER="db"
 DB_FILENAME="cms_db.sql"
 
+# the wiki location is where the wiki is installed.
+# By default, this is located on the root of the 
+# web site for the cms application. For example, if
+# you have installed the web application on your 
+# public home directory, then the path to the wiki
+# should be as follows:
+#	 /home/user/public_html/cms/wiki
 WIKI_LOCATION=""
+
 WIKI_FILES="wiki.d"
 WIKI_UPLOADS="uploads"
 WIKI_FOLDER="wiki"
 
-BACKUP_FOLDER="/home/$USER/backups"
+# this is the location where you want to store
+# your backups
+BACKUP_FOLDER=""
 
 # Check to make sure that the backup directory
 # exits first, if not then create it!
