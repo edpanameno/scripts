@@ -25,6 +25,13 @@ DB_FILENAME="cms_db.sql"
 #	 /home/user/public_html/cms/wiki
 WIKI_LOCATION=""
 
+# These are the folders that will be used to 
+# backup the wiki.  Note: the WIKI_FILES AND 
+# WIKI_UPLOADS values that you see here are 
+# for a default installation of the pmwiki
+# software included.  If you changed this 
+# on your installation, make the appropriate
+# changes here.
 WIKI_FILES="wiki.d"
 WIKI_UPLOADS="uploads"
 WIKI_FOLDER="wiki"
@@ -60,8 +67,8 @@ fi
 
 mysqldump -u $DB_USERNAME -p$DB_PASSWORD $DB_NAME > $BACKUP_FOLDER/$DB_FOLDER/$DB_FILENAME
 
-## Backups of the wiki are accomplished by using rsync to do
-## incremental backups of the content on the wiki.
+# Backups of the wiki are accomplished by using rsync to do
+# incremental backups of the content on the wiki.
 # pmwiki doesn't use a database as a backend and stores it content
 # on the file system. 
 rsync -av $WIKI_LOCATION/$WIKI_FILES $BACKUP_FOLDER/$WIKI_FOLDER/$WIKI_FILES
