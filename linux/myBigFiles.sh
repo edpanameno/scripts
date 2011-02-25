@@ -3,7 +3,9 @@
 # A simple script that will give you the top n files that
 # are taking up +/-n bytes on your home directory
 # 
-# To use this script, you must 
+# To use this script, you must pass two paramters.
+# The size of the files to look for
+# The number of results to display (i.e. top 10, or top 5)
 
 echo "Top $2 files at '$HOME' larger than $1"
 echo "============================================="
