@@ -1,6 +1,6 @@
-## Script used to import users into Active Directory
-## Note: The CSV file has the name of the OU that each
-## user will be created in.
+## Script used to import users into Active Directory.
+## These users are being imported into the CloudUsers OU
+## as specified below in the '$ou' variable.
 
 $users = Import-Csv -Delimiter "," -Path .\random-users.csv
 $ou = "OU=CloudUsers,OU=Accounts,DC=test,DC=local"
