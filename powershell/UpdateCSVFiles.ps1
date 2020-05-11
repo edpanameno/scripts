@@ -6,12 +6,12 @@
 
 
 $csvFiles = Get-ChildItem .\*.csv
-$resultsFolder = "C:\Users\panameno\Desktop\Kyruus-ClinicalKeyword Data\results\"
+$resultsFolder = "C:\Users\<user>\Desktop\source_dir\results\"
 $count = 0
 
 foreach($file in $csvFiles) {
     $fileInfo = Get-Item $file  
-    $outputFilePath = "C:\Users\panameno\Desktop\Kyruus-ClinicalKeyword Data\results\$($fileInfo.Name)"
+    $outputFilePath = "C:\Users\<user>\Desktop\source_dir\results\$($fileInfo.Name)"
    
     write-output "Processing file number $count - $($fileInfo.Name)"
 
