@@ -1,7 +1,6 @@
 ﻿## This script iterates thru each csv file and add the NPI number
 ## as a new column to each csv file. The results of each operation 
-## is then stored in the results folder (this is what will be sent
-## to Phynd).
+## is then stored in the results folder.
 ###  powershell -ExecutionPolicy Bypass .\UpdateCSVFiles.ps1
 
 
